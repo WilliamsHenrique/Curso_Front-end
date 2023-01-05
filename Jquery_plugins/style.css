@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+h2{
+    padding: 25px;
+    font-size: 32px;
+}
+
+.container{
+    padding: 20px;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: green;
+    color: floralwhite;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.campo{
+    margin-bottom: 16px;
+}
+
+.campo label{
+    display: block;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form{
+    max-width: 360px;
+}
+
+form button{
+    max-width: 128px;
+}
