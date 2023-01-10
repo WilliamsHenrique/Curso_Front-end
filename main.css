@@ -1,0 +1,19 @@
+header {
+    padding: 16px 0;
+    background-color: #4B0082;
+    color: #ecf0f1;
+    font-style: italic;
+}
+
+p{
+    font-size: 18px;
+}
+
+#promocoes{
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    font-style: italic;
+}
