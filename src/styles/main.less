@@ -1,0 +1,99 @@
+@corHeader: #9370DB;
+@corBorder: #341f97;
+@corForm: #7B68EE;
+@corBotao: #4B0082;
+@corBotaoCancelar: red;
+@corBranca: #fff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, 'sans-serif';
+}
+
+header{
+    background-color: @corHeader;
+    padding: 16px 0;
+    color: @corBranca;
+    display: flex;
+    border-bottom: 16px solid @corBorder;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+
+    button{
+        margin-left: 16px;
+    }
+}
+
+
+
+form{
+    background-color: @corForm;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+
+    h2{
+        padding: 16px;
+    }
+}
+
+form h2{
+    padding: 16px;
+}
+
+input, button{
+    padding: 8px;
+}
+
+button{
+    background-color: @corBotao;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @corBranca;
+}
+
+#botao-cancelar{
+    background-color: @corBotaoCancelar;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+        max-width: 25%;
+        list-style: none;
+        position: relative;
+        max-height: 280px;
+        overflow-y: hidden;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.overlay-imagem-link{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+
+    a{
+        color: @corBranca;
+        text-decoration: none;
+    }
+}
+
+ul li:hover .overlay-imagem-link{
+    opacity: 1;
+}
